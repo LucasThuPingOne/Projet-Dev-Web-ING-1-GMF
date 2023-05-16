@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>Connexion</title>
+    <link rel="shortcut icon" href="/img/vachette.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <form action="/code/Verif_Connexion.php" method="post" id="connexion">
+        <div class="container">
+            <h3 style="color: rgb(201, 159, 24);">Connexion</h3>
+            <label for="login">
+                <span>Login</span>
+                <input type="text" name="login" id="login" placeholder="Votre login">
+            </label>
+            <label for="password">
+                <span>Password</span>
+                <input type="password" name="password" id="password" placeholder="Votre password">
+            </label>
+            <input type="submit" value="Creer un compte">
+            <p>Vous n'avez pas de compte? <a class="creerCompte" href="creerCompte.html">Créez un compte</a></p>
+
+        </div>
+    </form>
+</body>
+</html>

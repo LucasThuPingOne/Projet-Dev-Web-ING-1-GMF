@@ -1,0 +1,47 @@
+[
+    {
+        "type": "Allo crepe",
+        "id_img": "crepe",
+        "Img": "/img/crepe.png",
+        "Id": "A_01",
+        "Description": "Appelez Paularis pour des crêpes délicieuses",
+        "Prix": 0,
+        "Stock": 10
+    },
+    {
+        "type": "Allo kidnapping",
+        "id_img": "kidnapping",
+        "Img" : "/img/kidnapping.jpeg",
+        "Id" : "A_02",
+        "Description": "Vous voulez disparaitre? Appelez-nous pour un évènement spectaculaire! Tout le monde se souviendra de votre enlevement!",
+        "Prix": 0,
+        "Stock": 10
+    },
+    {
+        "type": "Allo Taxi",
+        "id_img": "taxi",
+        "Img": "/img/taxi.jpg",
+        "Id": "A_03",
+        "Description": "Faites appel à nos servies pour  vous déplacer de planète en planètes",
+        "Prix": 0,
+        "Stock": 10 
+    },
+    {
+        "type": "Allo voyance",
+        "id_img": "voyance",
+        "Img": "/img/voyance.jpg",
+        "Id": "A_04",
+        "Description": "On ne sait jamais de quoi est fait le lendemain... Maintenant on peut.",
+        "Prix": 0,
+        "Stock": 10
+    },
+    {
+        "type": "Allo sandwich",
+        "id_img": "sandwich",
+        "Img": "/img/sandwich.jpg",
+        "Id": "A_05",
+        "Description": "Livraison d un délicieux sandwich directement dans votre bouche.",
+        "Prix": 0,
+        "Stock": 10
+    }
+]

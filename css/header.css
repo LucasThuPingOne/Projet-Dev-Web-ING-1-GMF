@@ -1,0 +1,167 @@
+@font-face {
+  font-family: nasa;
+  src: url(/css/nasalization-free.rg-regular.otf);
+}
+.CY_Tech{
+  height: auto;
+  width: 10%;
+  vertical-align: auto;
+  float: left;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --header-outer-height: 300px;
+  --header-inner-height: 70px;
+  --header-height-difference: calc(
+    var(--header-outer-height) - var(--header-inner-height)
+  );
+  --header-bg: #000000;
+  
+}
+
+
+.responsive-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  align-items: center;
+  display: block;
+}
+
+/* Sticky header */
+.header-outer {
+  /* Make it stick */
+  height: var(--header-outer-height);
+  position: sticky;
+  top: calc(
+    var(--header-height-difference) * -1
+  ); /* Multiply by -1 to get a negative value */
+  display: flow-root;
+  align-items: center;
+
+  /* Other */
+  background-color: var(--header-bg);
+  box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.1);
+}
+
+.header-inner {
+  /* Make it stick */
+  height: var(--header-inner-height);
+  position: sticky;
+  top: 0;
+  width: 70%;
+  
+
+  /* Other */
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-left: 300px;
+  margin-right: 30px;
+  margin-bottom: auto;
+}
+
+
+.nav {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 15%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: rgb(255, 255, 255);
+}
+
+.nav:link, .nav:visited, .nav:focus, .connexion:link, .connexion:visited, .connexion:focus {
+  background: rgba(255, 255, 0, 0);
+}
+
+.header-navigation a:hover:after, .dCo a:hover:after{
+  transform: scalex(1);
+}
+
+.header-navigation a:after, .dCo a:after{
+  transition: 0.25s ease;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: currentcolor;
+  transform: scalex(0);
+  position: relative;
+  bottom: -2px;
+  left: 0;
+}
+
+.nav:active, .connexion:active{
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.titre{
+  text-align: center;
+  font-size: 200%;
+  color: rgb(255, 255, 255);
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 40px;
+  margin-bottom: auto;
+  vertical-align: middle;
+}
+
+.panier{
+  font-size: 40px;
+}
+
+.connexion, .userCo{
+  color: rgb(255, 255, 255);
+  float: right;
+  outline: none;
+  text-decoration: none;
+ 
+}
+
+
+.dCo{
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.btn{
+  font-family: nasa;
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 5px;
+}
+.btn:hover {
+  border-color: white;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#panier{
+  color: white;
+  margin-left: 100px;
+}

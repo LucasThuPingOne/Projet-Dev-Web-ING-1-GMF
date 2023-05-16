@@ -1,0 +1,47 @@
+[
+    {
+        "type": "L oreiller",
+        "id_img": "oreiller",
+        "Img": "/img/oreiller.avif",
+        "Id": "O_01",
+        "Description": "Le plus important dans le développement personnel c est le sommeil.",
+        "Prix": 50,
+        "Stock": 10
+    },
+    {
+        "type": "Le plaid",
+        "id_img": "plaid",
+        "Img" : "/img/plaid.webp",
+        "Id" : "0_02",
+        "Description": "La chaleur est la base fondamentale du développement personnel",
+        "Prix": 70,
+        "Stock": 10
+    },
+    {
+        "type": "La casquette",
+        "id_img": "casquette",
+        "Img": "/img/casquette.avif",
+        "Id": "O_03",
+        "Description": "Le soleil est votre ennemi et cette casquette votre ami.",
+        "Prix": 25,
+        "Stock": 10 
+    },
+    {
+        "type": "Le livre",
+        "id_img": "livre",
+        "Img": "/img/livre.jpg",
+        "Id": "O_04",
+        "Description": "Pour vous inciter à acheter des formations en lignes",
+        "Prix": 50,
+        "Stock": 10
+    },
+    {
+        "type": "Le t-shirt",
+        "id_img": "tshirt",
+        "Img": "/img/tshirt.jpg",
+        "Id": "O_05",
+        "Description": "Montrer à tous que vous êtes le nouveau Oussama Amar",
+        "Prix": 80,
+        "Stock": 10
+    }
+]
