@@ -59,20 +59,18 @@
                         $tab = mysqli_fetch_all($resultat, MYSQLI_ASSOC);
                         foreach ($tab as $element) {
                         echo("<tr>");
-                        echo("<td><b>".$element['type']);
+                        echo("<td><b class='type'>".$element['type']);
                         echo("</b> <p><img class='image_ex' id='".$element['id_img']."'");
                         echo(" src='".$element['img']."' alt='' </p> </td>");
                         echo("<td>".$element['id']."</td>");
                         echo("<td>".$element['description']."</td>");
-                        echo("<td>".$element['prix']."</td>");
+                        echo("<td id='prix' class='prix'>".$element['prix']."</td>");
                         echo("<td id='Stock' class='stock' value='".$element['stock']."'>".$element['stock']."</td>");
                         echo("<td>
-                        <form>
                         <input class='moins' type='button' value='-' />
-                        <input type='text' name='Qte_Commande".$i."' class='Qte_Commande' value='0' maxlengh='2'/> 
+                        <input type='text' name='Qte_Commande' class='Qte_Commande' value='0' maxlengh='2'/> 
                         <input class='plus' type='button' value='+'' />
-                        <br><button type='submit'  id='ajoutPanier' onclick='execution()' class='ajoutPanier'>Ajouter au panier</button>
-                        </form>            
+                        <br><button  id='ajoutPanier' onclick='actu(this)' class='ajoutPanier'>Ajouter au panier</button>
                         </td></tr>");
                         echo("</tr>");
                         }
@@ -97,20 +95,18 @@
                         $tab = mysqli_fetch_all($resultat, MYSQLI_ASSOC);
                         foreach ($tab as $element) {
                         echo("<tr>");
-                        echo("<td><b>".$element['type']);
+                        echo("<td><b class='type'>".$element['type']);
                         echo("</b> <p><img class='image_ex' id='".$element['id_img']."'");
                         echo(" src='".$element['img']."' alt='' </p> </td>");
                         echo("<td>".$element['id']."</td>");
                         echo("<td>".$element['description']."</td>");
-                        echo("<td>".$element['prix']."</td>");
+                        echo("<td id='prix' class='prix'>".$element['prix']."</td>");
                         echo("<td id='Stock' class='stock' value='".$element['stock']."'>".$element['stock']."</td>");
                         echo("<td>
-                        <form>
                         <input class='moins' type='button' value='-' />
-                        <input type='text' name='Qte_Commande".$i."' class='Qte_Commande' value='0' maxlengh='2'/> 
+                        <input type='text' name='Qte_Commande' class='Qte_Commande' value='0' maxlengh='2'/> 
                         <input class='plus' type='button' value='+'' />
-                        <br><button type='submit'  id='ajoutPanier' onclick='execution()' class='ajoutPanier'>Ajouter au panier</button>
-                        </form>            
+                        <br><button  id='ajoutPanier' onclick='actu(this)' class='ajoutPanier'>Ajouter au panier</button>
                         </td></tr>");
                         echo("</tr>");
                         }
@@ -131,20 +127,20 @@
                         $tab = mysqli_fetch_all($resultat, MYSQLI_ASSOC);
                         foreach ($tab as $element) {
                         echo("<tr>");
-                        echo("<td><b>".$element['type']);
+                        echo("<td><b class='type'>".$element['type']);
                         echo("</b> <p><img class='image_ex' id='".$element['id_img']."'");
                         echo(" src='".$element['img']."' alt='' </p> </td>");
                         echo("<td>".$element['id']."</td>");
                         echo("<td>".$element['description']."</td>");
-                        echo("<td>".$element['prix']."</td>");
-                        echo("<td id='Stock' class='stock' value='".$element['stock']."'>".$element['stock']."</td>");
+                        echo("<td id='prix' class='prix'>".$element['prix']."</td>");
+                        echo("<td id='stock' class='stock' value='".$element['stock']."'>".$element['stock']."</td>");
                         echo("<td>
-                        <form>
+                        
                         <input class='moins' type='button' value='-' />
-                        <input type='text' name='Qte_Commande".$i."' class='Qte_Commande' value='0' maxlengh='2'/> 
+                        <input type='text' name='Qte_Commande' class='Qte_Commande' value='0' maxlengh='2'/> 
                         <input class='plus' type='button' value='+'' />
-                        <br><button type='submit'  id='ajoutPanier' onclick='execution()' class='ajoutPanier'>Ajouter au panier</button>
-                        </form>            
+                        <br><button  id='ajoutPanier' onclick='actu(this)' class='ajoutPanier'>Ajouter au panier</button>
+                                 
                         </td></tr>");
                         echo("</tr>");
                         }

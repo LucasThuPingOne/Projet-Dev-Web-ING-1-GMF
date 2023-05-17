@@ -12,9 +12,11 @@
             </form>
             </p>
             ");
+            
             }
             else {
                 echo("<a href='/code/connexion.html' id='connexion' class='connexion' >Connexion</a>");
+                
             }
         ?>
         
@@ -30,7 +32,7 @@
             <a class="nav" href="produits.php?cat=objet">Objets dérivées</a> |
             <a class="nav" href="produits.php?cat=allo">Allos</a> |
             <a class="nav" href="contact.php">Contact</a>
-            <p id="panier" >Panier: <span id="prix"> <?php echo($_SESSION['panier']); ?> €</span> </p>
+            <a class="nav" href="panier.php"><p>Panier: <span id="panier1"> <?php echo($_SESSION['panier']); ?> €</span> </p></a>
         </nav>
         
     

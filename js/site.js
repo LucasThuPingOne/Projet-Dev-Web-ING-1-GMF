@@ -50,7 +50,7 @@ for (let i = 0; i < longueur; i++) {
         
 
     });
-    
+    console.log(Qte_Commande[i]);
     
 }
 
@@ -157,26 +157,29 @@ function actuStock() {
     }
 }*/
 
-function execution() {
-    for (let i = 0; i < document.getElementsByClassName('stock').length; i++) {
-        var Qte_Commande = parseInt(document.getElementsByClassName("Qte_Commande")[i-1].value,10);
-        var stock = parseInt(document.getElementsByClassName('stock')[i].innerHTML,10);
-
-
+function actu(element) {
+    longueur = document.getElementsByClassName('stock').length;
+    
+        var url = new URL(window.location.href);
+        var cat = url.searchParams.get("cat");
+        var Qte_Commande = parseInt(element.parentNode.querySelector(".Qte_Commande").value,10);
+        var prix = parseInt(element.parentNode.parentNode.querySelector(".prix").innerHTML,10);
+        var stock = parseInt(element.parentNode.parentNode.querySelector(".stock").innerHTML,10);
+        var id = element.parentNode.parentNode.querySelector(".image_ex").id; 
+        var panier = parseInt(document.getElementById('panier1').innerHTML,10) + Qte_Commande*prix;
+        var type = element.parentNode.parentNode.querySelector(".type").innerHTML;
         // On définit que l'on va faire à chq changement d'état
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             // On ne fait quelque chose que si on a tout reç̧u
             // et que le serveur est ok
-            if (xhttp.readyState == 4 && xhttp.status == 200){
-                document.getElementsByClassName('stock')[i].innerHTML = this.responseText;
+            if (this.readyState == 4 && this.status == 200){
+                element.parentNode.parentNode.querySelector(".stock").innerHTML = this.responseText;
+                document.getElementById('panier1').innerHTML = panier+"€";
             }
         }
-
         xhttp.open("POST","actuStock.php",true) ;
-        xhttp.send(null);
-    }
-    
-    
-  }
-  
+        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhttp.send("Qte_Commande="+Qte_Commande+"&stock="+stock+"&id_img="+id+"&cat="+cat+"&prix="+prix+"&type="+type);
+
+}

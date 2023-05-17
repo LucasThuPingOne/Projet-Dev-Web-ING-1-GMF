@@ -2,7 +2,7 @@
     session_start();
     
     if ($_POST['a_recup'] == 1) {
-        header('Location: accueil.php');
+        header('Location: viderPanier.php');
         session_destroy();
         
         exit();
@@ -21,7 +21,8 @@
         if ($numrow == 1) {
             $_SESSION['connexion'] = 1;
             $_SESSION['login'] = $_POST['login'];
-            header('Location: accueil.php');
+            $_SESSION['panier'] = 0;
+            header('Location: viderPanier.php');
             exit();
         }
                     
